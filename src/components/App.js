@@ -34,6 +34,8 @@ const App = () => {
             <Route path="*" element={<Error/>} />
             </Route>
         </Routes>
+      <ul>You are not authenticated, Please login first</ul>
+      <ul><li>You are not authenticated, Please login first</li></ul>
       <div>Hi Welcome to Code PlayGround</div>
       <div>Hi Welcome to Code PlayGround</div>
       </div>
