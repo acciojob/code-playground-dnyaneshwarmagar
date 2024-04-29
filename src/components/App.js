@@ -28,11 +28,11 @@ const App = () => {
         </ul>
         
         <Routes>
-          <Route to="/" element={<HomePage/>}>
+          {/* <Route to="/" element={<HomePage/>}> */}
             <Route path="/login" element={<Login handleLogin={handleLogin} handleLogout={handleLogout} authenticated={authenticated} />}></Route>
             <Route path="/playground" element={<PrivateRoute Component={Playground} authenticated={authenticated} />} />
             <Route path="*" element={<Error/>} />
-            </Route>
+            {/* </Route> */}
         </Routes>
       
       <div>Hi Welcome to Code PlayGround</div>
