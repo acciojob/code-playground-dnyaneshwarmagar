@@ -1,11 +1,11 @@
 // HomePage.js
 import React from 'react';
+import { Link,Outlet } from 'react-router-dom';
 
 const HomePage = () => {
   return (
     <div>
-      <h2>Home Page</h2>
-      <p>Welcome! This is the private route.</p>
+        <Outlet/>
     </div>
   );
 };
