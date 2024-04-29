@@ -21,7 +21,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="main-container">
-      {authenticated?"Logged in, Now you can enter Playground":"You are not authenticated, Please login first"};
+      <div>{authenticated?"Logged in, Now you can enter Playground":"You are not authenticated, Please login first"}</div>;
         <ul>
           <li><Link to="/playground">PlayGround</Link></li>
           <li><Link to="/login">Login</Link></li>
@@ -31,7 +31,7 @@ const App = () => {
           {/* <Route to="/" element={<HomePage/>}> */}
             <Route path="/login" element={<Login handleLogin={handleLogin} handleLogout={handleLogout} authenticated={authenticated} />}></Route>
             <Route path="/playground" element={<PrivateRoute Component={Playground} authenticated={authenticated} />} />
-            <Route path="/error" element={<Error/>} />
+            <Route path="*" element={<Error/>} />
             {/* </Route> */}
         </Routes>
       
