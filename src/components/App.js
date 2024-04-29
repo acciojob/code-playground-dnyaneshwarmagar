@@ -34,8 +34,8 @@ const App = () => {
             <Route path="*" element={<Error/>} />
             </Route>
         </Routes>
-      <div></div>
-      <div></div>
+      <div>Hi Welcome to Code PlayGround</div>
+      <div>Hi Welcome to Code PlayGround</div>
       </div>
     </BrowserRouter>
   )
