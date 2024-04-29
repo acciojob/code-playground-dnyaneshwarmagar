@@ -21,7 +21,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="main-container">
-      {authenticated?"Logged in, Now you can enter Playground":"You are not authenticated, Please login first"}
+      {authenticated?"Logged in, Now you can enter Playground":"You are not authenticated, Please login first"};
         <ul>
           <li><Link to="/playground">PlayGround</Link></li>
           <li><Link to="/login">Login</Link></li>
