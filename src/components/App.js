@@ -31,11 +31,16 @@ const App = () => {
           {/* <Route to="/" element={<HomePage/>}> */}
             <Route path="/login" element={<Login handleLogin={handleLogin} handleLogout={handleLogout} authenticated={authenticated} />}></Route>
             <Route path="/playground" element={<PrivateRoute Component={Playground} authenticated={authenticated} />} />
-            <Route path="*" element={<Error/>} />
+            <Route path="/error" element={<Error/>} />
             {/* </Route> */}
         </Routes>
       
-      
+      {/* <div>Hi Welcome to Code PlayGround</div>
+      <div>Hi Welcome to Code PlayGround</div>
+      <ul>You are not authenticated, Please login first</ul>
+      <ul><li>You are not authenticated, Please login first</li></ul>
+      <ul>Hi Welcome to Code PlayGround</ul>
+      <ul><li>Hi Welcome to Code PlayGround</li></ul> */}
       </div>
     </BrowserRouter>
   )
